@@ -1,0 +1,23 @@
+[
+    {
+        "razonSocial": "ALTAMAR FOODS PERU S.R.L.",
+        "descripcion": "asdasdasd",
+        "hora": "09:35:00",
+        "responsable": "Leonardo",
+        "hora_llegada": "09:51",
+        "hora_limite": null,
+        "hora_termino": "09:51",
+        "marcadoLlegada": true,
+        "marcadoTermino": true
+    },
+    {
+        "razonSocial": "AQUA EXPORT SOCIEDAD ANONIMA CERRADA - AQUA EXPORT S.A.C.",
+        "descripcion": "asdasd",
+        "hora": "09:35:00",
+        "hora_llegada": null,
+        "hora_limite": null,
+        "hora_termino": null,
+        "marcadoLlegada": false,
+        "marcadoTermino": false
+    }
+]

@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Alpha Male Modern';
+    src: url('/font/AlphaMaleModern.ttf') format('truetype');
+}
+
+[x-cloak] {
+    display: none;
+}
+
+.pulsoAdvertencia{
+    animation: pulsoAdvertenciaED 1.2s infinite;
+}
+
+@keyframes pulsoAdvertenciaED {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+.scroll-dataTableLEO::-webkit-scrollbar {
+    width: 8px;
+    height: 7px;
+    background: transparent;
+}
+
+.scroll-dataTableLEO::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.scroll-dataTableLEO::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 5px;
+}
+
+.scroll-sidebar::-webkit-scrollbar{
+    width: 5px;
+}
+
+.scroll-sidebar::-webkit-scrollbar-track{
+    border: 7px solid #232943;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .5) inset;
+}
+
+.scroll-sidebar::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background: linear-gradient(
+        10deg,
+        #7F7F7F,
+        #7F7F7F
+    );
+}
+
+#nombre_Logo {
+    font-family: "AlphaMaleModern";
+    letter-spacing: 3px;
+}
+
+#B_logo {
+    font-family: "AlphaMaleModern";
+    transform: translateX(2px) translateY(1px);
+}
+
+.swal2-container {
+    z-index: 10002 !important; /* Ajusta este valor según sea necesario */
+}
+
+.p-datepicker-panel {
+    z-index: 100000 !important; /* Ajusta este valor según sea necesario */
+}
+
+.p-dialog-mask{
+    padding: 8px;
+    z-index: 10000 !important;
+}
+
+.p-dialog-mask-clientes {
+    z-index: 10000 !important;
+}
+
+.p-multiselect-overlay {
+    z-index: 100010 !important;
+}
+
+@layer components {
+    .dark {
+        .p-datatable-header {
+            background-color: #1F2937 !important;
+        }
+        .p-datatable-table-container {
+            background-color: #0062ff !important;
+        }
+        .p-datatable-selectable-row {
+            background-color: #1F2937 !important;
+        }
+        .p-datatable-tbody > tr > td {
+            border-bottom: 1px solid #fcfeff !important;
+        }
+        .p-paginator {
+            background-color: #1F2937 !important;
+            color: #fcfeff;
+        }
+    }
+}
